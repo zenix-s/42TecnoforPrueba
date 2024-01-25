@@ -1,5 +1,5 @@
 
-import  { useEffect, useState } from "react";
+import  { useState } from "react";
 import Header from "./header";
 import Board from "./board";
 import { task } from "../interfaces";
@@ -81,14 +81,7 @@ const Workspace = () => {
 		}
 	];
 
-	useEffect(() => {
-		setTasks(
-      localStorage.getItem("tasks")
-        ? JSON.parse(localStorage.getItem("tasks")!)
-        : []
-    );
-	}
-
+	
 	const [tasks, setTasks] = useState<task[]>(tasksL);
 
 	const onFilterOptionClick = (filter: string) => {
