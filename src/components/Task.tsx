@@ -13,7 +13,7 @@ const Task=(
 	}: TaskProps,
 )=> {
   return (
-    <div id="tasks">
+    <div className="task">
       {task.title}
 			{" - "}
 			{task.description}

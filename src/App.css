@@ -132,6 +132,7 @@ main {
 	width: 100%;
 	padding: 10px;
 	flex-grow: 1;
+	overflow-y: auto;
 }
 
 .header{
@@ -158,6 +159,12 @@ main {
 #tasks {
 	padding: 10px;
 	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px #8e8f9a;
+}
+
+.task{
+	padding: 10px;
 	background-color: #FFFFFF;
 	border: 1px #8e8f9a;
 }
