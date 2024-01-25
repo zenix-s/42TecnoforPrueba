@@ -1,4 +1,3 @@
-import { task } from "../interfaces";
 import Action from "./actions";
 import Dropdown from "./dropdown";
 interface HeaderProps {

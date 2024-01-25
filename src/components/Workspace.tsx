@@ -96,7 +96,7 @@ const Workspace = () => {
 	}
 
 	const deleteTask = (task: task) => {
-		// setTasks(tasks.filter(task => task.id !== id));
+		alert("delete task" + task.id);
 	}
 
 

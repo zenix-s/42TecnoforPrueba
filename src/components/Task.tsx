@@ -1,11 +1,16 @@
 import { task } from "../interfaces"
+import Action from "./actions";
 
 interface TaskProps {
 	task : task
+	onDeleteClick: (task: task) => void;
 }
 
 const Task=(
-	{task}: TaskProps
+	{
+		task, 
+		onDeleteClick
+	}: TaskProps,
 )=> {
   return (
     <div id="tasks">
@@ -14,6 +19,8 @@ const Task=(
 			{task.description}
 			{" - "}
 			{task.completed ? "Completada" : "Sin completar"}
+			{" - "}
+			<Action onClick={() => onDeleteClick(task)}>Eliminar</Action>
     </div>
   )
 }

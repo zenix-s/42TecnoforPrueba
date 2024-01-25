@@ -23,6 +23,7 @@ const Tasks = ({ tasks, onDeleteClick }: tasksProps) => {
 				<div key={task.id} className="task">
 					<Task
 						task={task}
+						onDeleteClick={handleDeleteClick}
 					/>
 				</div>
 			))}
