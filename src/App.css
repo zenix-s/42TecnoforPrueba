@@ -1,42 +1,163 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+	font-family: 'Raleway', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+	--white-color: #FFFFFF;
+	--blue-color: #1B1D39;
+	--yellow-color: #f5c20066;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+main {
+	height: 100vh;
+	width: 100vw;
+	display: flex !important;
 }
 
-.card {
-  padding: 2em;
+.header-title {
+	padding: 10px;
+	font-size: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+#actions {
+	padding: 10px;
+	color: white;
+}
+
+.action button {
+	display: flex;
+	gap: 5px;
+}
+
+.app-frame {
+	display: flex;
+	height: 100vh;
+}
+
+.side-navigation {
+	width: 250px;
+	height: 100%;
+	background-color: var(--blue-color);
+	color: #fff;
+	padding: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-header h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: var(--white-color);
+}
+
+.navigation-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.sidebar-text {
+	width: 100%;
+	padding: 10px;
+	color: var(--white-color);
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.action-button {
+	background-color: var(--yellow-color);
+	color: var(--blue-color);
+	border: none;
+	padding: 5px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#workspace {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.board{
+	margin-top: 10px;
+	background-color: rgb(224, 224, 224);
+	width: 100%;
+	padding: 10px;
+	flex-grow: 1;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+#header-actions {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.board-title {
+	font-size: 35px;
+}
+
+#tasks {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px #8e8f9a;
 }

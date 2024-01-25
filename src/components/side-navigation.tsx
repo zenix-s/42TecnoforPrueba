@@ -1,30 +1,21 @@
-import {
-    SideNavigation,
-    NavigationHeader,
-    NavigationContent,
-    NavigationFooter,
-    Header,
-    Footer,
-  } from '@atlaskit/side-navigation';
-  
-  // import '@atlaskit/side-navigation/style.css';
+import React from 'react';
+import '../App.css';
 
-
-
-const Sidebar = () => {
+const Board = () => {
   return (
-    <SideNavigation label="project" testId="side-navigation">
-      <NavigationHeader>
-        <Header>Your Project Name</Header>
-      </NavigationHeader>
-      <NavigationContent>
-        {<p>Hola mundo</p>}
-      </NavigationContent>
-      <NavigationFooter>
-        <Footer>Footer content</Footer>
-      </NavigationFooter>
-    </SideNavigation>
+    <div className="app-frame">
+      <div className="side-navigation">
+        <div className="navigation-header">
+          <h2>ProDo42</h2>
+        </div>
+        <div className="navigation-content">
+          <p className="sidebar-text">
+              To-do list
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Sidebar;
+export default Board;

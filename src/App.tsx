@@ -1,13 +1,13 @@
 import './App.css'
 import  Sidebar from './components/side-navigation'
+import	Workspace from './components/Workspace'
 
 function App() {
   return (
-    <>
-
-    <Sidebar />
-    
-    </>
+    <main>
+    	<Sidebar />
+			<Workspace />
+    </main>
   )
 }
 
